@@ -7,10 +7,13 @@ sudo apt-get update
 sudo apt-get -y install build-essential
 
 # Packages required for compilation of some stdlib modules
-sudo apt-get -y install tklib 
+sudo apt-get -y install tklib
 
 # Extras for RubyGems and Rails:
 sudo apt-get -y install zlib1g-dev libssl-dev
 
-# Readline Dev on Kubuntu 12.10:
-sudo apt-get -y install libreadline-dev
+# Readline Dev on Ubuntu 12.04 LTS:
+sudo apt-get -y install libreadline-gplv2-dev
+
+# Install some nokogiri dependencies:
+sudo apt-get -y install libxml2 libxml2-dev libxslt1-dev
